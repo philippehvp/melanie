@@ -5,10 +5,11 @@
 	<title>Mélanie L - Masseuse esthéticienne</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	<!--[if lte IE 8]><script src="dist/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="dist/css/main.css" />
+	<link rel="stylesheet" href="dist/css/styles.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="dist/css/ie8.css" /><![endif]-->
+	<!--[if lte IE 9]><link rel="stylesheet" href="dist/css/ie9.css" /><![endif]-->
 </head>
 
 <body>
@@ -54,8 +55,8 @@
 			<!-- Réseaux sociaux et contact -->
 			<ul class="icons">
 				<!--li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li-->
-				<li><a href="https://www.facebook.com/mlmasseuse.estheticienne13.fr/?fref=ts" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-				<li><a href="#contact" class="icon fa-envelope"><span class="label">Email</span></a></li>
+				<li><a href="https://www.facebook.com/mlmasseuse.estheticienne13.fr/?fref=ts" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+				<li><a href="#contact" class="icon fa-envelope scrolly"><span class="label">Email</span></a></li>
 			</ul>
 
 		</div>
@@ -72,7 +73,7 @@
 				</header>
 
 				<body>
-					<p>Vous souhaitez une prestation <br />réalisée avec qualité, douceur et efficacité ?<br /> Vous cherchez une esthéticienne qui prenne soin de vous et vous chouchoute ?
+					<p>Vous souhaitez une prestation <br />réalisée avec qualité, douceur et efficacité ?<br /> Vous recherchez une esthéticienne qui prenne soin de vous et vous chouchoute ?
 					</p>
 					<h2 class="alt">
 									Alors ne cherchez plus, je suis celle qu'il vous faut
@@ -95,46 +96,92 @@
 				<div class="row">
 					<div class="12u 12u$(mobile)">
 						<article class="item">
-							<a href="#tarif_maquillage"><img src="https://s-media-cache-ak0.pinimg.com/564x/07/34/9c/07349cf661077344fdc4996a16c84881.jpg" alt="Maquillage" style="width: 50%;" /></a>
+							<a class="scrolly" href="#tarif_maquillage"><img src="https://s-media-cache-ak0.pinimg.com/564x/07/34/9c/07349cf661077344fdc4996a16c84881.jpg" alt="Maquillage" style="width: 50%;" /></a>
 							<header>
-								<!--h3-->
-									<a href="#tarif_maquillage" class="skel-layers-ignoreHref">Maquillage</a>
-								<!--/h3-->
+								<h3>Maquillage</h3>
+								<label onclick="toggleElement('#detail-maquillage');">Détail</label>
+								<a class="scrolly" href="#tarif_maquillage" class="skel-layers-ignoreHref">Tarifs</a>
 							</header>
+
 							<body>
-								Texte pour le maquillage
+								<div id="detail-maquillage" class="toggle-area">
+									Texte pour le maquillage
+								</div>
 							</body>
 						</article>
 					</div>
 					<div class="12u 12u$(mobile)">
 						<article class="item">
-							<a href="#tarif_soins_visage"><img src="http://www.institut-galatee.com/gifs/visage01.jpg" alt="Soins visage" /></a>
+							<a class="scrolly" href="#tarif_soins_visage"><img src="http://www.institut-galatee.com/gifs/visage01.jpg" alt="Soins visage" /></a>
 							<header>
-								<h3><a href="#tarif_soins_visage" class="skel-layers-ignoreHref">Soins visage</a></h3>
+								<h3>Soins visage</h3>
+								<label onclick="toggleElement('#detail-soins-visage');">Détail</label>
+								<a class="scrolly" href="#tarif_soins_visage" class="skel-layers-ignoreHref">Tarifs</a>
 							</header>
+
 							<body>
-								Texte pour les soins visage
+								<div id="detail-soins-visage" class="toggle-area">
+									Texte pour les soins visage
+								</div>
 							</body>
 						</article>
 					</div>
 					<div class="12u 12u$(mobile)">
 						<article class="item">
-							<a href="#tarif_epilations"><img src="http://www.institut-galatee.com/gifs/visage01.jpg" alt="Epilations" /></a>
+							<a class="scrolly" href="#tarif_epilations"><img src="http://www.institut-galatee.com/gifs/visage01.jpg" alt="Epilations" /></a>
 							<header>
-								<h3><a href="#tarif_epilations" class="skel-layers-ignoreHref">Epilations</a></h3>
+								<h3>Epilations</h3>
+								<label onclick="toggleElement('#detail-epilations');">Détail</label>
+								<a class="scrolly" href="#tarif_epilations" class="skel-layers-ignoreHref">Tarifs</a>
 							</header>
+
+							<body>
+								<div id="detail-epilations" class="toggle-area">
+									Texte pour les épilations
+								</div>
+							</body>
 						</article>
 					</div>
 					<div class="12u 12u$(mobile)">
 						<article class="item">
-							<a href="#tarif_massages_corps"><img src="http://www.aquatonic-rennes.com/files/2016/01/soin-corps.jpg" alt="Massages corps" /></a>
+							<a class="scrolly" href="#tarif_massages_corps"><img src="http://www.aquatonic-rennes.com/files/2016/01/soin-corps.jpg" alt="Massages corps" /></a>
 							<header>
-								<h3><a href="#tarif_massages_corps" class="skel-layers-ignoreHref">Massages corps</a></h3>
+								<h3>Massages du corps</h3>
+								<label onclick="toggleElement('#detail-massages-corps');">Détail</label>
+								<a class="scrolly" href="#tarif_massages_corps" class="skel-layers-ignoreHref">Tarifs</a>
 							</header>
+
+							<body>
+								<div id="detail-massages-corps" class="toggle-area">
+									<center><img src="dist/images_site/14111545_10210461127910972_1279103678_n.jpg" alt="" width="200" height="150" /></a>
+									</center>
+									<b><u><p><taille1>Deroulement du soin</u></b></taille1>
+									</br>
+									<rose>Gommage au Sucre et au Concombre</rose><br/> Active la circulation sanguine. Les cristaux de sucre offrent une exfoilation naturelle en reduisant les risques d'irritation et le concombre adoucit l'epiderme<br/>
+									</p>
+									<p>
+										<rose>L'huile de Modelage</rose> <br/> Cette huile glisse sur la peau et ne colle pas. Sa texture unique se prete a des mouvements doux et relaxants, prodiguant une sensation exceptionnelle. <br/>
+									</p>
+									<p>
+										<rose>Enveloppement au Rassoul </rose> <br/> Argile 100% NATURELLE provenant du Maghreb, le Rassoul possede des proprietes absorbantes et astringentes. Il permet de purifier, d'adoucir l'epiderme, de reduire les secretions sebacees et de resserrer
+										les pores. <br/>
+									</p>
+									<p>
+										<rose>OU</rose>
+									</p>
+									<p>
+										<rose>Enveloppement nourrissant et relaxant a la noix de Coco </rose> <br/> Enrichi en pulpe de noix de coco aux proprietes nourrissantes et relaxantes, ce soin enveloppe le corps d'une creme gourmande et onctueuse. Ce delicieux moment de bien-etre
+										vous plongera dans un eden de douceur en revelant une peau idealement nourrie. <br/>
+									</p>
+									<p>
+										<rose>Lait Hydratant extreme </rose> <br/> Ideal pour tous types de peaux meme les plus sensible, ce lait apporte a votre peau une hydratation extreme. Il associe un agent hydratant puissant, l'Aquaxyl, a de l'huile de noix de macadamia et du beurre
+										de karite pour envelopper votre corps d'une douceur extreme. La peau immediatement hydratee retrouve confort et souplesse. <br/>
+									</p>
+								</div>
+							</body>
 						</article>
 					</div>
 				</div>
-
 			</div>
 		</section>
 
@@ -200,9 +247,7 @@
 					<h2>Me contacter</h2>
 				</header>
 
-				<p>Vous avez une question ou une demande spécifique ?<br />
-					N'hésitez pas à me laisser votre message et vos coordonnées.<br />
-				Je vous contacterai à mon tour dès que possible.</p>
+				<p>Vous avez une question ou une demande spécifique ?<br /> N'hésitez pas à me laisser votre message et vos coordonnées.<br /> Je vous contacterai à mon tour dès que possible.</p>
 
 				<form method="post" action="#">
 					<div class="row">
@@ -234,13 +279,14 @@
 	</div>
 
 	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/jquery.scrollzer.min.js"></script>
-	<script src="assets/js/skel.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-	<script src="assets/js/main.js"></script>
+	<script src="dist/js/jquery.min.js"></script>
+	<script src="dist/js/jquery.scrolly.min.js"></script>
+	<script src="dist/js/jquery.scrollzer.min.js"></script>
+	<script src="dist/js/skel.min.js"></script>
+	<script src="dist/js/util.js"></script>
+	<!--[if lte IE 8]><script src="dist/js/ie/respond.min.js"></script><![endif]-->
+	<script src="dist/js/main.js"></script>
+	<script src="dist/js/scripts.js"></script>
 
 </body>
 
