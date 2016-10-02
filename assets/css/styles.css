@@ -5,3 +5,12 @@
 .link {
   cursor: pointer;
 }
+
+/* Ecrasement des éléments du framework */
+#main > section {
+  background-image: none;
+}
+
+#main > section.one {
+  background-image: none;
+}
