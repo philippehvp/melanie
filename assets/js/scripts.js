@@ -1,4 +1,8 @@
 function toggleElement(el) {
-  $(el).slideToggle();
-  
+    $(el).slideToggle();
+
+}
+
+function goTo(anchor) {
+    location.hash = anchor;
 }
