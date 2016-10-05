@@ -73,13 +73,14 @@
 				</header>
 
 				<body>
-					<p>Bonjour et bienvenue.<br /> Je suis masseuse esthéticienne à domicile, située à Istres et ses environs.<br /> Vous souhaitez une prestation réalisée avec qualité, douceur et efficacité ?<br /> Vous recherchez une esthéticienne qui prenne soin de
-						vous et vous chouchoute ?
-					</p>
-					<h2 class="alt">
-									Alors ne cherchez plus, vous venez de trouver
-					</h2>
-					<p>Découvrez l'ensemble de mes prestations avec leur détail ainsi que les tarifs.</p>
+					<p>Bonjour et bienvenue.<br />
+						Je suis masseuse esthéticienne à domicile, située à Istres et ses environs.
+						<br />Vous souhaitez une prestation réalisée avec qualité, douceur et efficacité ?
+						<h3>
+							Alors ne cherchez plus, vous venez de trouver
+						</h3>
+						Je saurai prendre soin de vous et vous chouchouter.<br />
+						Découvrez l'ensemble de mes prestations avec leur détail ainsi que les tarifs.</p>
 				</body>
 				<footer>
 					<a href="#prestation" class="button scrolly">Mes prestations</a>
@@ -103,7 +104,7 @@
 					<div class="6u 6u$(mobile)">
 						<article class="item">
 							<h3>Le maquillage</h3>
-							<label class="link" onclick="toggleElement('#detail-maquillage');">En savoir plus</label>
+							<label class="link" onclick="toggleElement('#detail-maquillage');">En savoir plus <i class="fa fa-sort-desc" aria-hidden="true"></i></label>
 							<label>&nbsp;|&nbsp;</label>
 							<a class="scrolly" href="#tarif_maquillage" class="skel-layers-ignoreHref">Tarifs</a>
 						</article>
@@ -126,7 +127,7 @@
 					<div class="6u 6u$(mobile)">
 						<article class="item">
 							<h3>Soins visage</h3>
-							<label class="link" onclick="toggleElement('#detail-soins-visage');">En savoir plus</label>
+							<label class="link" onclick="toggleElement('#detail-soins-visage');">En savoir plus <i class="fa fa-sort-desc" aria-hidden="true"></i></label>
 							<label>&nbsp;|&nbsp;</label>
 							<a class="scrolly" href="#tarif_soins_visage" class="skel-layers-ignoreHref">Tarifs</a>
 						</article>
@@ -149,7 +150,7 @@
 					<div class="6u 6u$(mobile)">
 						<article class="item">
 								<h3>Epilations</h3>
-								<label class="link" onclick="toggleElement('#detail-epilations');">En savoir plus</label>
+								<label class="link" onclick="toggleElement('#detail-epilations');">En savoir plus <i class="fa fa-sort-desc" aria-hidden="true"></i></label>
 								<label>&nbsp;|&nbsp;</label>
 								<a class="scrolly" href="#tarif_epilations" class="skel-layers-ignoreHref">Tarifs</a>
 						</article>
@@ -171,7 +172,7 @@
 					<div class="6u 6u$(mobile)">
 						<article class="item">
 							<h3>Massages du corps</h3>
-							<label class="link" onclick="toggleElement('#detail-massages-corps');">En savoir plus</label>
+							<label class="link" onclick="toggleElement('#detail-massages-corps');">En savoir plus <i class="fa fa-sort-desc" aria-hidden="true"></i></label>
 							<label>&nbsp;|&nbsp;</label>
 							<a class="scrolly" href="#tarif_massages_corps" class="skel-layers-ignoreHref">Tarifs</a>
 						</article>
@@ -221,7 +222,7 @@
 					<div class="6u 6u$(mobile)">
 						<article class="item">
 							<h3>Onglerie</h3>
-							<label class="link" onclick="toggleElement('#detail-onglerie');">En savoir plus</label>
+							<label class="link" onclick="toggleElement('#detail-onglerie');">En savoir plus <i class="fa fa-sort-desc" aria-hidden="true"></i></label>
 							<label>&nbsp;|&nbsp;</label>
 							<a class="scrolly" href="#tarif_onglerie" class="skel-layers-ignoreHref">Tarifs</a>
 						</article>
@@ -253,7 +254,7 @@
 							<header id="tarif_maquillage">
 								<h3>Maquillage</h3>
 								<tbody>
-									<table class="table">
+									<table class="table table-tarif">
 										<tbody>
 											<tr>
 												<td>Maquillage jour</td>
@@ -276,7 +277,7 @@
 							<header id="tarif_soins_visage">
 								<h3>Soins visage</h3>
 								<tbody>
-									<table class="table">
+									<table class="table table-tarif">
 										<tbody>
 											<tr>
 												<td>Soin hydratant 1h15</td>
@@ -301,7 +302,7 @@
 							<header id="tarif_epilations">
 								<h3>Epilations (-10% à partir de 3)</h3>
 								<tbody>
-									<table class="table">
+									<table class="table table-tarif">
 										<tbody>
 											<tr>
 												<td>Sourcils à la pince</td>
@@ -357,7 +358,7 @@
 							<header id="tarif_massages_corps">
 								<h3>Massages corps</h3>
 								<tbody>
-									<table class="table">
+									<table class="table table-tarif">
 										<tbody>
 											<tr>
 												<td>Soin dos 40 min</td>
@@ -391,7 +392,7 @@
 							<header id="tarif_onglerie">
 								<h3>Onglerie</h3>
 								<tbody>
-									<table class="table">
+									<table class="table table-tarif">
 										<tbody>
 											<tr>
 												<td>Beauté des mains</td>
@@ -421,7 +422,7 @@
 
 
 		<!-- A propos de moi -->
-		<section id="apropos" class="three">
+		<section id="apropos" class="one dark cover">
 			<div class="container">
 
 				<header>
@@ -453,7 +454,7 @@
 							<textarea name="message" placeholder="Votre message"></textarea>
 						</div>
 						<div class="12u$">
-							<input type="submit" value="Envoyer" />
+							<input type="submit" value="Envoyer mais ne fonctionne pas (encore)" />
 						</div>
 					</div>
 				</form>
