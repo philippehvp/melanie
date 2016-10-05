@@ -14,3 +14,33 @@
 #main > section.one {
   background-image: none;
 }
+
+#header {
+  background-color: #000000;
+}
+
+#nav ul li a.active {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+#logo h1  {
+  color: #e27689;
+}
+
+#logo p {
+  color: #ffffff;
+}
+
+.image.avatar48 {
+  border: 1px solid #ffffff;
+  width: auto;
+  height: auto;
+}
+
+.item {
+  box-shadow: none;
+}
+
+table {
+  margin-bottom: 0;
+}
