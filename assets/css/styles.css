@@ -76,3 +76,7 @@ table {
   color: #e27689;
   text-decoration: underline;
 }
+
+.tableau-detail img {
+    width: 120px;
+}
