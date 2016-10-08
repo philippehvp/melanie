@@ -13,6 +13,9 @@
     font-style: normal;
 }
 
+.prestation img {
+    width: 200px;
+}
 
 /* Ecrasement des éléments du framework */
 
