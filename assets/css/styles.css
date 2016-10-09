@@ -24,7 +24,11 @@
 }
 
 #main>section.one {
-    background-image: url('../images_site/Warm-candle-light-red_1024x768.jpg');
+    background-image: url('../images_site/04783_800x480.jpg');
+}
+
+#main > section.dark {
+    color: #000;
 }
 
 #header {
