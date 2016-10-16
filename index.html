@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!--[if lte IE 8]><script src="dist/js/ie/html5shiv.js"></script><![endif]-->
 	<link rel="stylesheet" href="dist/css/main.css" />
+	<link rel="stylesheet" href="dist/css/pgwslideshow.min.css" />
 	<link rel="stylesheet" href="dist/css/styles.css" />
 	<!--[if lte IE 8]><link rel="stylesheet" href="dist/css/ie8.css" /><![endif]-->
 	<!--[if lte IE 9]><link rel="stylesheet" href="dist/css/ie9.css" /><![endif]-->
@@ -41,7 +42,16 @@
 							-->
 				<ul>
 					<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Accueil</span></a></li>
-					<li><a href="#prestation" id="prestation-link" class="skel-layers-ignoreHref"><span class="icon fa-map">Les prestations</span></a></li>
+					<li onclick="toggleElement('#menu-prestations');"><a href="#" id="prestation-link" class="skel-layers-ignoreHref"><span class="icon fa-map">Les prestations</span></a></li>
+					<div id="menu-prestations" class="menu-prestations">
+						<ul>
+							<li><a href="#maquillage" class="skel-layers-ignoreHref">Le maquillage</a></li>
+							<li><a href="#soins-visage" class="skel-layers-ignoreHref">Les soins du visage</a></li>
+							<li><a href="#soins-corps" class="skel-layers-ignoreHref">Les soins du corps</a></li>
+							<li><a href="#epilation" class="skel-layers-ignoreHref">L'épilation</a></li>
+							<li><a href="#onglerie" class="skel-layers-ignoreHref">L'onglerie</a></li>
+						</ul>
+					</div>
 					<li><a href="#tarif" id="tarif-link" class="skel-layers-ignoreHref"><span class="icon fa-eur">Les tarifs</span></a></li>
 					<li><a href="#apropos" id="apropos-link" class="skel-layers-ignoreHref"><span class="icon fa-user">A propos de moi</span></a></li>
 					<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Me contacter</span></a></li>
@@ -54,7 +64,7 @@
 
 			<!-- Réseaux sociaux et contact -->
 			<ul class="icons">
-				<li><a href="https://www.facebook.com/mlmasseuse.estheticienne13.fr/?fref=ts" class="icon fa-facebook" target="_blank"><span class="span">Facebook</span></a></li>
+				<li><a href="https://www.facebook.com/mlmasseuse.estheticienne13.fr/?fref=ts" target="_blank"><span class="fa fa-facebook"></span></li>
 			</ul>
 
 		</div>
@@ -80,438 +90,257 @@
 				</body>
 				<footer>
 					<a href="#prestation" class="button scrolly">Mes prestations</a>
-				</footer>
+					</footer>
+		</div>
+		</section>
+
+		<!-- Prestations dans un carrousel -->
+		<!--div class="row">
+			<div class="6u 12u$(mobile)">
+				<ul class="carrousel">
+					<li><a class="scrolly" href="#detail-maquillage"></a><img src="dist/images_site/07349cf661077344fdc4996a16c84881.jpg" alt="Maquillage" data-description="Maquillage de jour, de soirée ou de mariée"></a></li>
+					<li><img src="dist/images_site/visage01.jpg" alt="Les soins du visage" data-description="Soin hydratant, régénérant ou purifiant"></li>
+					<li><img src="dist/images_site/soin-dos.jpg" alt="Les soins du dos"></li>
+					<li><img src="dist/images_site/14081319_10210461127990974_1326523830_n.jpg" alt="Les soins du buste"></li>
+					<li><img src="dist/images_site/14080915_10210461128030975_115109867_n.jpg" alt="Les soins amincissants"></li>
+					<li><img src="dist/images_site/14112148_10210461128070976_107907875_n.jpg" alt="Les soins jambes légères"></li>
+					<li><img src="dist/images_site/14054725_10210461127750968_1685143542_n.jpg" alt="Le massage californien"></li>
+					<li><img src="dist/images_site/epilation.jpg" alt="L'épilation"></li>
+					<li><img src="dist/images_site/onglerie.jpg" alt="L'onglerie"></li>
+				</ul>
+			</div>
+		</div-->
+
+		<!-- Maquillage -->
+		<section id="maquillage" class="two">
+			<div class="row">
+				<div class="12u 12u$(mobile)">
+					<article class="item">
+						<body>
+							<h3>Le maquillage</h3>
+							<table class="tableau-detail">
+								<tbody>
+									<tr>
+										<td colspan="2">
+											<span class="detail-categorie">Maquillage de jour</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<img src="dist/images_site/maquillage-jour.jpg" alt="Maquillage de jour 1" />
+										</td>
+										<td>
+											<img src="dist/images_site/maquillage-jour-2.jpg" alt="Maquillage de jour 2" />
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											<span class="detail-categorie">Maquillage de soirée</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<img src="dist/images_site/maquillage-soiree.jpg" alt="Maquillage de soirée 1" />
+										</td>
+										<td>
+											<img src="dist/images_site/maquillage-soiree-2.jpg" alt="Maquillage de soirée 2" />
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											<span class="detail-categorie">Maquillage de mariée</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<img src="dist/images_site/maquillage-mariee.jpg" alt="Maquillage de mariée 1" />
+										</td>
+										<td>
+											<img src="dist/images_site/maquillage-mariee-2.jpg" alt="Maquillage de mariée 2" />
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</body>
+					</article>
+				</div>
 			</div>
 		</section>
 
-		<!-- Prestations -->
-		<section id="prestation" class="two">
-			<div class="container prestation">
-				<header>
-					<h3>Mes soins de Beauté et Bien-être</h3>
-				</header>
+		<section id="soins-visage" class="two">
+			<div class="row">
+				<div class="12u 12u$(mobile)">
+					<article class="item">
+						<body>
+							<div>
+								<h3>Les soins du visage</h3>
+								<span class="detail-categorie">Soin Hydratant</span>
 
-				<!-- Le maquillage -->
-				<div class="row">
-					<div class="6u 6u$(mobile)">
-						<article class="item">
-							<img src="dist/images_site/07349cf661077344fdc4996a16c84881.jpg" alt="Maquillage">
-						</article>
-					</div>
-					<div class="6u 6u$(mobile)">
-						<article class="item">
-							<h3>Le maquillage</h3>
-							<span class="link" onclick="toggleElement('#detail-maquillage');">En savoir plus <i class="fa fa-sort-desc" aria-hidden="true"></i></span>
-							<span>&nbsp;|&nbsp;</span>
-							<a class="scrolly" href="#tarif_maquillage" class="skel-layers-ignoreHref">Tarifs</a>
-						</article>
-					</div>
-					<div id="detail-maquillage" class="12u 12u$(mobile) toggle-area detail">
-						<article class="item">
+								<span class="detail-titre">Exfoliant au jus d’Aloé Véra Bio et à la poudre de Bambou</span>
+								<p>Exfoliant naturel pour le visage. La haute nutrition apportée par sa concentration de jus d’Aloé Véra bio, adoucit l’exfoliation qui purifie naturellement les cellules mortes de l’épiderme, grâce à l’action de la poudre de bambou. Nettoyage doux
+									et sensation de confort.</p>
 
-							<body>
-								<table class="tableau-detail">
-									<tbody>
-										<tr>
-											<td colspan="2">
-												<span class="detail-titre">Maquillage de jour</span>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<img src="dist/images_site/maquillage-jour.jpg" alt="Maquillage de jour 1" />
-											</td>
-											<td>
-												<img src="dist/images_site/maquillage-jour-2.jpg" alt="Maquillage de jour 2" />
-											</td>
-										</tr>
-										<tr>
-											<td colspan="2">
-												<span class="detail-titre">Maquillage de soirée</span>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<img src="dist/images_site/maquillage-soiree.jpg" alt="Maquillage de soirée 1" />
-											</td>
-											<td>
-												<img src="dist/images_site/maquillage-soiree-2.jpg" alt="Maquillage de soirée 2" />
-											</td>
-										</tr>
-										<tr>
-											<td colspan="2">
-												<span class="detail-titre">Maquillage de mariée</span>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<img src="dist/images_site/maquillage-mariee.jpg" alt="Maquillage de mariée 1" />
-											</td>
-											<td>
-												<img src="dist/images_site/maquillage-mariee-2.jpg" alt="Maquillage de mariée 2" />
-											</td>
-										</tr>
-									</tbody>
-								</table>
-							</body>
-						</article>
-					</div>
+								<span class="detail-titre">Modelage à l’huile de tournesol</span>
+								<p>Crème enrichie en huile de tournesol aux vertus assouplissantes et unifiantes pour la peau. Avec sa composition en Vitamine E et en jus d’Aloé Véra bio elle offre un soin anti-âge préventif par ses actions anti-oxydantes et hautement nutritives.</p>
+
+								<span class="detail-titre">Masque gel aux plantes</span>
+								<p>Masque pour peau normale à très sèche, fortement concentrée en glycérine végétale et en jus d’Aloé Véra bio, aux propriétés hautement nutritives, en laissant une peau douce et parfumée. L’extrait de mauve et l’eau de rose apportent une sensation
+									de confort et adoucissent la peau en lui conférant un parfait éclat.</p>
+
+								<span class="detail-categorie">Soin purifiant</span>
+
+								<span class="detail-titre">Gommage à grain</span>
+								<p>Douce et onctueuse, cette crème de gommage élimine les impuretés et cellules mortes tout en stimulant le renouvellement cellulaire. Gommage mécanique à grains fins.</p>
+
+								<span class="detail-titre">Modelage à l’huile de tournesol</span>
+								<p>Crème enrichie en huile de tournesol aux vertus assouplissantes et unifiantes pour la peau. Avec sa composition en Vitamine E et en jus d’Aloé Véra bio elle offre un soin anti-âge préventif par ses actions anti-oxydantes et hautement nutritives.</p>
+
+								<span class="detail-titre">Masque terreux au Kaolin et beurre de karité</span>
+								<p>Absorbant et hydratant, ce masque affine et matifie le grain de peau, laisse la peau souple et purifiée et le teint lumineux. Pour les peaux grasses et mixtes</p>
+
+								<span class="detail-categorie">Soin nourrissant</span>
+
+								<span class="detail-titre">Gommage chimique</span>
+								<p>Affine le grain de peau, lisse, unifie le teint et apporte de l'éclat grâce à l'action enzymatique de la Keratoline et des acides de fleurs permettant d'eliminer cellules mortes et impuretés. Idéal pour les peux sensibles ou grasses, ne nécessite
+									pas de frottement</p>
+
+								<span class="detail-titre">Modelage à l’huile de tournesol</span>
+								<p>Crème enrichie en huile de tournesol aux vertus assouplissantes et unifiantes pour la peau. Avec sa composition en Vitamine E et en jus d’Aloé Véra bio elle offre un soin anti-âge préventif par ses actions anti-oxydantes et hautement nutritives.</p>
+
+								<span class="detail-titre">Masque crème haute nutrition</span>
+								<p>Pour embellir votre peau grâce à l'association d'actifs nourissants, hydratants, régénérants et anti-oxydants: Beurre de karité, Beurre de cacao, Huile de noisette et Complexe de vitamine A, E et B5 Pour une peau plus lisse, souple et confortable.
+									Finis les tiraillements</p>
+
+								<span class="detail-categorie">Soin régénérant anti-âge</span>
+
+								<span class="detail-titre">Gommage chimique</span>
+								<p>Affine le grain de peau, lisse, unifie le teint et apporte de l'éclat grâce à l'action enzymatique de la Keratoline et des acides de fleurs permettant d'eliminer cellules mortes et impuretés. Idéal pour les peux sensibles ou grasses, ne nécessite
+									pas de frottement.</p>
+
+								<span class="detail-titre">Modelage à l’huile de tournesol</span>
+								<p>Crème enrichie en huile de tournesol aux vertus assouplissantes et unifiantes pour la peau. Avec sa composition en Vitamine E et en jus d’Aloé Véra bio elle offre un soin anti-âge préventif par ses actions anti-oxydantes et hautement nutritives.</p>
+
+								<span class="detail-titre">Masque de collagène</span>
+								<p>Idéal pour les peaux déshydratées, sèches et sensibles, ces feuilles constituées uniquement de fibres de collagène natif permettent une hydratation intense et repulpent les tissus de la peau. Pour une peau revitalisée et jeune.</p>
+
+								<span class="detail-titre">Ou</span>
+
+								<span class="detail-titre">Masque alginate fermeté</span>
+								<p>Masque remodelant à base d’alginates extraits des algues brunes. Après gélification il forme une seconde peau qui favorise la pénétration des actifs : raffermissant, hydratant - sensation agréable de fraîcheur - la peau est tonique, souple et
+									douce. S’utilise pour des soins anti-âges et raffermissants.</p>
+							</div>
+						</body>
+					</article>
 				</div>
+			</div>
+		</section>
 
-				<hr>
+		<section id="soins-corps" class="two">
+			<div class="row">
+				<div class="12u 12u$(mobile)">
 
-				<!-- Les soins du visage -->
-				<div class="row">
-					<div class="6u 6u$(mobile)">
-						<article class="item">
-							<img src="dist/images_site/visage01.jpg" alt="Les soins du visage">
-						</article>
-					</div>
-					<div class="6u 6u$(mobile)">
-						<article class="item">
-							<h3>Les soins du visage</h3>
-							<span class="link" onclick="toggleElement('#detail-soins-visage');">En savoir plus <i class="fa fa-sort-desc" aria-hidden="true"></i></span>
-							<span>&nbsp;|&nbsp;</span>
-							<a class="scrolly" href="#tarif_soins_visage" class="skel-layers-ignoreHref">Tarifs</a>
-						</article>
-					</div>
-					<div id="detail-soins-visage" class="12u 12u$(mobile) toggle-area detail">
-						<article class="item">
+					<h3>Les soins du corps</h3>
 
-							<body>
+					<!-- Soins du dos -->
+					<article class="item">
+						<body>
+							<div>
+								<h3>Les soins du dos</h3>
+								<img src="dist/images_site/soin-dos.jpg" alt="Les soins du dos">
+								<br>
+								<img src="dist/images_site/14111545_10210461127910972_1279103678_n.jpg" alt="" width="200" height="150">
+								<br>
 
-								<div>
-									<span class="detail-categorie">Soin Hydratant</span>
+								<span class="detail-titre">Gommage au Sucre et au Concombre</span>
+								<p>Active la circulation sanguine. Les cristaux de sucre offrent une exfoliation naturelle en réduisant les risques d'irritation tandis que le concombre adoucit l'épiderme.</p>
+								<span class="detail-titre">L'huile de modelage</span>
+								<p>Cette huile glisse sur la peau et ne colle pas. Sa texture unique se prête à des mouvements doux et relaxants, prodiguant une sensation exceptionnelle.</p>
+								<span class="detail-titre">Enveloppement au Rassoul</span>
+								<p>Argile 100% NATURELLE provenant du Maghreb, le Rassoul possède des propriétés absorbantes et astringentes. Il permet de purifier, d'adoucir l'épiderme, de réduire les sécrétions sébacées et de resserrer les pores.</p>
+								<span class="detail-titre">Ou</span>
+								<span class="detail-titre">Enveloppement nourrissant et relaxant à la noix de Coco</span>
+								<p>Enrichi en pulpe de noix de coco aux propriétés nourrissantes et relaxantes, ce soin enveloppe le corps d'une crème gourmande et onctueuse. Ce délicieux moment de bien-être vous plongera dans un éden de douceur en revelant une peau idéalement
+									nourrie.
+								</p>
+								<span class="detail-titre">Lait Hydratant extrême</span>
+								<p>Idéal pour tous types de peaux même les plus sensibles, ce lait apporte à votre peau une hydratation extrême. Il associe un agent hydratant puissant, l'Aquaxyl, à de l'huile de noix de macadamia et du beurre de karité pour envelopper votre corps
+									d'une douceur extrême. La peau immédiatement hydratée retrouve confort et souplesse.</p>
+							</div>
+						</body>
+					</article>
 
-									<span class="detail-titre">Exfoliant au jus d’Aloé Véra Bio et à la poudre de Bambou</span>
-									<p>Exfoliant naturel pour le visage. La haute nutrition apportée par sa concentration de jus d’Aloé Véra bio, adoucit l’exfoliation qui purifie naturellement les cellules mortes de l’épiderme, grâce à l’action de la poudre de bambou. Nettoyage doux
-										et sensation de confort.</p>
+					<!-- Soins du buste -->
+					<article class="item">
+						<body>
+							<div>
+								<h3>Les soins du buste</h3>
+								<img src="dist/images_site/14081319_10210461127990974_1326523830_n.jpg" alt="Les soins du buste">
+								<br>
+								<span class="detail-titre">Gommage au Sucre et au Concombre</span>
+								<p>Active la circulation sanguine. Les cristaux de sucre offrent une exfoliation naturelle en réduisant les risques d'irritation tandis que le concombre adoucit l'épiderme.</p>
+								<span class="detail-titre">L'huile de modelage</span>
+								<p>Cette huile glisse sur la peau et ne colle pas. Sa texture unique se prête à des mouvements doux et relaxants, prodiguant une sensation exceptionnelle.</p>
+								<span class="detail-titre">Enveloppement Remodeler Buste et Cou</span>
+								<p>Ce masque remodelant est à base d'alginates extraits des algues brunes. Après gélification, il forme une seconde peau et favorise la pénétration des actifs raffermissants. La peau est visiblement tonifiée avec une sensation de confort unique.</p>
+								<span class="detail-titre">Soin raffermissant cou et décolleté</span>
+								<p>Ce soin aide à corriger les effets du temps et plus spécifiquement le relâchement cutané qui marque la zone grafile du cou et du décolleté. Jour après jour, le cou devient plus ferme, plus jeune, rides et ridules sont estompées.</p>
+							</div>
+						</body>
+					</article>
 
-									<span class="detail-titre">Modelage à l’huile de tournesol</span>
-									<p>Crème enrichie en huile de tournesol aux vertus assouplissantes et unifiantes pour la peau. Avec sa composition en Vitamine E et en jus d’Aloé Véra bio elle offre un soin anti-âge préventif par ses actions anti-oxydantes et hautement nutritives.</p>
+					<!-- Soins amincissants -->
+					<arti
+					1203cle class="item">
+						<h3>Les soins amincissants</h3>
+						<img src="dist/images_site/14080915_10210461128030975_115109867_n.jpg" alt="Les soins amincissants">
+					</article>
 
-									<span class="detail-titre">Masque gel aux plantes</span>
-									<p>Masque pour peau normale à très sèche, fortement concentrée en glycérine végétale et en jus d’Aloé Véra bio, aux propriétés hautement nutritives, en laissant une peau douce et parfumée. L’extrait de mauve et l’eau de rose apportent une sensation
-										de confort et adoucissent la peau en lui conférant un parfait éclat.</p>
+					<!-- Soins jambes légères -->
+					<article class="item">
+						<h3>Les soins jambes légères</h3>
+						<img src="dist/images_site/14112148_10210461128070976_107907875_n.jpg" alt="Les soins jambes légères">
+					</article>
 
-									<span class="detail-categorie">Soin purifiant</span>
+					<!-- Massage californien -->
+					<article class="item">
+						<body>
+							<div>
+								<h3>Le massage californien</h3>
+								<img src="dist/images_site/14054725_10210461127750968_1685143542_n.jpg" alt="Le massage californien">
+								<span class="detail-titre">Huile de modelage</span>
+								<p>Cette huile connue pour sa texture douce et onctueuse se prête à des mouvememnts doux et relaxants. Le massage californien est une approche globale qui vise autant la détente que l'éveil d'une conscience psychocorporelle. Ce massage utilise de
+									longs mouvements lents et fluides qui permettent une profonde relaxation physique et psychique.</p>
+								<br>
+								<p>Partant d'effleurages doux, enveloppants et relaxants, les manoeuvres s'enchaînent et s'intensifient pour soulager les tensions plus profondes. Cela peut faire surgir et libérer des émotions cachées, inscrites dans la mémoire corporelle. Plus
+									la personne massée s'abandonne à l'expérience, plus elle s'ouvre à ce que le massage californien qualifie de toucher du coeur.</p>
+							</div>
+						</body>
+					</article>
 
-									<span class="detail-titre">Gommage à grain</span>
-									<p>Douce et onctueuse, cette crème de gommage élimine les impuretés et cellules mortes tout en stimulant le renouvellement cellulaire. Gommage mécanique à grains fins.</p>
-
-									<span class="detail-titre">Modelage à l’huile de tournesol</span>
-									<p>Crème enrichie en huile de tournesol aux vertus assouplissantes et unifiantes pour la peau. Avec sa composition en Vitamine E et en jus d’Aloé Véra bio elle offre un soin anti-âge préventif par ses actions anti-oxydantes et hautement nutritives.</p>
-
-									<span class="detail-titre">Masque terreux au Kaolin et beurre de karité</span>
-									<p>Absorbant et hydratant, ce masque affine et matifie le grain de peau, laisse la peau souple et purifiée et le teint lumineux. Pour les peaux grasses et mixtes</p>
-
-									<span class="detail-categorie">Soin nourrissant</span>
-
-									<span class="detail-titre">Gommage chimique</span>
-									<p>Affine le grain de peau, lisse, unifie le teint et apporte de l'éclat grâce à l'action enzymatique de la Keratoline et des acides de fleurs permettant d'eliminer cellules mortes et impuretés. Idéal pour les peux sensibles ou grasses, ne nécessite
-										pas de frottement</p>
-
-									<span class="detail-titre">Modelage à l’huile de tournesol</span>
-									<p>Crème enrichie en huile de tournesol aux vertus assouplissantes et unifiantes pour la peau. Avec sa composition en Vitamine E et en jus d’Aloé Véra bio elle offre un soin anti-âge préventif par ses actions anti-oxydantes et hautement nutritives.</p>
-
-									<span class="detail-titre">Masque crème haute nutrition</span>
-									<p>Pour embellir votre peau grâce à l'association d'actifs nourissants, hydratants, régénérants et anti-oxydants: Beurre de karité, Beurre de cacao, Huile de noisette et Complexe de vitamine A, E et B5 Pour une peau plus lisse, souple et confortable.
-										Finis les tiraillements</p>
-
-									<span class="detail-categorie">Soin régénérant anti-âge</span>
-
-									<span class="detail-titre">Gommage chimique</span>
-									<p>Affine le grain de peau, lisse, unifie le teint et apporte de l'éclat grâce à l'action enzymatique de la Keratoline et des acides de fleurs permettant d'eliminer cellules mortes et impuretés. Idéal pour les peux sensibles ou grasses, ne nécessite
-										pas de frottement.</p>
-
-									<span class="detail-titre">Modelage à l’huile de tournesol</span>
-									<p>Crème enrichie en huile de tournesol aux vertus assouplissantes et unifiantes pour la peau. Avec sa composition en Vitamine E et en jus d’Aloé Véra bio elle offre un soin anti-âge préventif par ses actions anti-oxydantes et hautement nutritives.</p>
-
-									<span class="detail-titre">Masque de collagène</span>
-									<p>Idéal pour les peaux déshydratées, sèches et sensibles, ces feuilles constituées uniquement de fibres de collagène natif permettent une hydratation intense et repulpent les tissus de la peau. Pour une peau revitalisée et jeune.</p>
-
-									<span class="detail-titre">Ou</span>
-
-									<span class="detail-titre">Masque alginate fermeté</span>
-									<p>Masque remodelant à base d’alginates extraits des algues brunes. Après gélification il forme une seconde peau qui favorise la pénétration des actifs : raffermissant, hydratant - sensation agréable de fraîcheur - la peau est tonique, souple et
-										douce. S’utilise pour des soins anti-âges et raffermissants.</p>
-
-									<span class="link" onclick="toggleElement('#detail-soins-visage'); goTo('#detail-soins-visage');">Fermer</span>
-								</div>
-							</body>
-						</article>
-					</div>
 				</div>
+			</div>
+		</section>
 
-				<hr>
-
-				<!-- Les soins du dos -->
-				<div class="row">
-					<div class="6u 6u$(mobile)">
-						<article class="item">
-							<img src="dist/images_site/soin-dos.jpg" alt="Les soins du dos">
-						</article>
-					</div>
-					<div class="6u 6u$(mobile)">
-						<article class="item">
-							<h3>Les soins du dos</h3>
-							<span class="link" onclick="toggleElement('#detail-soins-dos');">En savoir plus <i class="fa fa-sort-desc" aria-hidden="true"></i></span>
-							<span>&nbsp;|&nbsp;</span>
-							<a class="scrolly" href="#tarif_soins" class="skel-layers-ignoreHref">Tarifs</a>
-						</article>
-					</div>
-					<div id="detail-soins-dos" class="12u 12u$(mobile) toggle-area detail">
-						<article class="item">
-
-							<body>
-								<div>
-									<img src="dist/images_site/14111545_10210461127910972_1279103678_n.jpg" alt="" width="200" height="150" />
-
-									<span class="detail-titre">Gommage au Sucre et au Concombre</span>
-									<p>Active la circulation sanguine. Les cristaux de sucre offrent une exfoliation naturelle en réduisant les risques d'irritation tandis que le concombre adoucit l'épiderme.</p>
-									<span class="detail-titre">L'huile de modelage</span>
-									<p>Cette huile glisse sur la peau et ne colle pas. Sa texture unique se prête à des mouvements doux et relaxants, prodiguant une sensation exceptionnelle.</p>
-									<span class="detail-titre">Enveloppement au Rassoul</span>
-									<p>Argile 100% NATURELLE provenant du Maghreb, le Rassoul possède des propriétés absorbantes et astringentes. Il permet de purifier, d'adoucir l'épiderme, de réduire les sécrétions sébacées et de resserrer les pores.</p>
-									<span class="detail-titre">Ou</span>
-									<span class="detail-titre">Enveloppement nourrissant et relaxant à la noix de Coco</span>
-									<p>Enrichi en pulpe de noix de coco aux propriétés nourrissantes et relaxantes, ce soin enveloppe le corps d'une crème gourmande et onctueuse. Ce délicieux moment de bien-être vous plongera dans un éden de douceur en revelant une peau idéalement nourrie.</p>
-									<span class="detail-titre">Lait Hydratant extrême</span>
-									<p>Idéal pour tous types de peaux même les plus sensibles, ce lait apporte à votre peau une hydratation extrême. Il associe un agent hydratant puissant, l'Aquaxyl, à de l'huile de noix de macadamia et du beurre de karité pour envelopper votre corps
-										d'une douceur extrême. La peau immédiatement hydratée retrouve confort et souplesse.</p>
-								</div>
-
-								<span class="link" onclick="toggleElement('#detail-soins-dos'); goTo('#detail-soins-dos');">Fermer</span>
-							</body>
-						</article>
-					</div>
+		<section id="epilation" class="two">
+			<div class="row">
+				<div class="12u 12u$(mobile)">
+					<article class="item">
+						<h3>L'épilation</h3>
+						<img src="dist/images_site/epilation.jpg" alt="L'épilation">
+					</article>
 				</div>
+			</div>
+		</section>
 
-				<hr>
+		<section id="onglerie" class="two">
+			<div class="row">
+				<div class="12u 12u$(mobile)">
+					<article class="item">
+						<h3>L'onglerie</h3>
+						<img src="dist/images_site/onglerie.jpg" alt="L'onglerie">
+					</article>
 
-				<!-- Les soins du buste -->
-				<div class="row">
-					<div class="6u 6u$(mobile)">
-						<article class="item">
-							<img src="dist/images_site/14081319_10210461127990974_1326523830_n.jpg" alt="Les soins du buste">
-						</article>
-					</div>
-					<div class="6u 6u$(mobile)">
-						<article class="item">
-							<h3>Les soins du buste</h3>
-							<span class="link" onclick="toggleElement('#detail-soins-buste');">En savoir plus <i class="fa fa-sort-desc" aria-hidden="true"></i></span>
-							<span>&nbsp;|&nbsp;</span>
-							<a class="scrolly" href="#tarif_soins" class="skel-layers-ignoreHref">Tarifs</a>
-						</article>
-					</div>
-					<div id="detail-soins-buste" class="12u 12u$(mobile) toggle-area detail">
-						<article class="item">
-
-							<body>
-								<div>
-									<span class="detail-titre">Gommage au Sucre et au Concombre</span>
-									<p>Active la circulation sanguine. Les cristaux de sucre offrent une exfoliation naturelle en réduisant les risques d'irritation tandis que le concombre adoucit l'épiderme.</p>
-									<span class="detail-titre">L'huile de modelage</span>
-									<p>Cette huile glisse sur la peau et ne colle pas. Sa texture unique se prête à des mouvements doux et relaxants, prodiguant une sensation exceptionnelle.</p>
-									<span class="detail-titre">Enveloppement Remodeler Buste et Cou</span>
-									<p>Ce masque remodelant est à base d'alginates extraits des algues brunes. Après gélification, il forme une seconde peau et favorise la pénétration des actifs raffermissants. La peau est visiblement tonifiée avec une sensation de confort unique.</p>
-									<span class="detail-titre">Soin raffermissant cou et décolleté</span>
-									<p>Ce soin aide à corriger les effets du temps et plus spécifiquement le relâchement cutané qui marque la zone grafile du cou et du décolleté. Jour après jour, le cou devient plus ferme, plus jeune, rides et ridules sont estompées.</p>
-								</div>
-
-								<span class="link" onclick="toggleElement('#detail-soins-buste'); goTo('#detail-soins-buste');">Fermer</span>
-							</body>
-						</article>
-					</div>
 				</div>
-
-				<hr>
-
-				<!-- Les soins amincissants -->
-				<div class="row">
-					<div class="6u 6u$(mobile)">
-						<article class="item">
-							<img src="dist/images_site/14080915_10210461128030975_115109867_n.jpg" alt="Les soins amincissants">
-						</article>
-					</div>
-					<div class="6u 6u$(mobile)">
-						<article class="item">
-							<h3>Les soins amincissants</h3>
-							<span class="link" onclick="toggleElement('#detail-soins-amincissants');">En savoir plus <i class="fa fa-sort-desc" aria-hidden="true"></i></span>
-							<span>&nbsp;|&nbsp;</span>
-							<a class="scrolly" href="#tarif_soins" class="skel-layers-ignoreHref">Tarifs</a>
-						</article>
-					</div>
-					<div id="detail-soins-amincissants" class="12u 12u$(mobile) toggle-area detail">
-						<article class="item">
-
-							<body>
-								<div>
-									<span class="detail-titre">Gommage au Sucre et au Concombre</span>
-									<p>Active la circulation sanguine. Les cristaux de sucre offrent une exfoliation naturelle en réduisant les risques d'irritation tandis que le concombre adoucit l'épiderme.</p>
-									<span class="detail-titre">Huile de modelage amincissante</span>
-									<p>A base d'algues et d'huiles essentielles de romarin et de citron pour un massage amincissant, votre silhouette sera comme affinée grâce aux techniques de ce modelage et aux bienfaits de l'huile amincissante.</p>
-									<span class="detail-titre">Enveloppement chauffant au thé vert</span>
-									<p>Ce masque chauffant combine deux actions : peeling et massage. Il permet de lisser efficacement les capitons, d'affiner et de raffermir la silhouette grâce à "l'effet sauna" et aux agents lissants. Il est formulé à partir de jeunes feuilles de
-										thé vert qui sont reconnues pour leurs propriétés amincissantes et détoxifiantes.</p>
-									<span class="detail-titre">Lait hydratant extrême</span>
-									<p>Idéal pour tous types de peau et même les plus sensibles, ce lait apporte à votre peau une hydratation extrême. Il associe un agent hydratant puissant, l'Aquaxyl, à de l'huile de noix de macadamia et du beurre de karité pour envelopper votre
-										corps d'une douceur extrême. La peau immédiatement hydratée retrouve confort et souplesse.</p>
-								</div>
-
-								<span class="link" onclick="toggleElement('#detail-soins-amincissants'); goTo('#detail-soins-amincissants');">Fermer</span>
-							</body>
-						</article>
-					</div>
-				</div>
-
-				<hr>
-
-
-				<!-- Les soins jambes légères -->
-				<div class="row">
-					<div class="6u 6u$(mobile)">
-						<article class="item">
-							<img src="dist/images_site/14112148_10210461128070976_107907875_n.jpg" alt="Les soins jambes légères">
-						</article>
-					</div>
-					<div class="6u 6u$(mobile)">
-						<article class="item">
-							<h3>Les soins jambes légères</h3>
-							<span class="link" onclick="toggleElement('#detail-soins-jambes-legeres');">En savoir plus <i class="fa fa-sort-desc" aria-hidden="true"></i></span>
-							<span>&nbsp;|&nbsp;</span>
-							<a class="scrolly" href="#tarif_soins" class="skel-layers-ignoreHref">Tarifs</a>
-						</article>
-					</div>
-					<div id="detail-soins-jambes-legeres" class="12u 12u$(mobile) toggle-area detail">
-						<article class="item">
-
-							<body>
-								<div>
-									<span class="detail-titre">Gommage au Sucre et au Concombre</span>
-									<p>Active la circulation sanguine. Les cristaux de sucre offrent une exfoliation naturelle en réduisant les risques d'irritation tandis que le concombre adoucit l'épiderme.</p>
-									<span class="detail-titre">Huile de modelage amincissante</span>
-									<p>A base d'algues et d'huiles essentielles de romarin et de citron pour un massage amincissant, votre silhouette sera comme affinée grâce aux techniques de ce modelage et aux bienfaits de l'huile amincissante.</p>
-									<span class="detail-titre">Enveloppement cryogénique</span>
-									<p>La lotion fraîcheur assure un soulagement instantané sous l'action du menthol qui délasse et rafraîchit durablement. Ce produit se dilue dans l'eau et s'utilise conjointement avec l'application de bandes de crêpes imbibées de cette solution.</p>
-									<span class="detail-titre">Gel jambe rafraîchissant</span>
-									<p>Tel un glaçon, ce gel non gras atténue instantanément la sensation de fatigue. Le menthol rafraîchissant dissipe immédiatement l'inconfort des jambes tandis que les huiles essentielles de sauge et de romarin procurent une agréable sensation de
-										bien-être. Riche en minéraux et oli-éléments, les algues et l'eau de mer apportent des actifs dynamisant indispensables. Plus légères, les jambes retrouvent tout leur confort.</p>
-								</div>
-
-								<span class="link" onclick="toggleElement('#detail-soins-jambes-legeres'); goTo('#detail-soins-jambes-legeres');">Fermer</span>
-							</body>
-						</article>
-					</div>
-				</div>
-
-				<hr>
-
-				<!-- Le massage californien -->
-				<div class="row">
-					<div class="6u 6u$(mobile)">
-						<article class="item">
-							<img src="dist/images_site/14054725_10210461127750968_1685143542_n.jpg" alt="Le massage californien">
-						</article>
-					</div>
-					<div class="6u 6u$(mobile)">
-						<article class="item">
-							<h3>Le massage californien</h3>
-							<span class="link" onclick="toggleElement('#detail-massage-californien');">En savoir plus <i class="fa fa-sort-desc" aria-hidden="true"></i></span>
-							<span>&nbsp;|&nbsp;</span>
-							<a class="scrolly" href="#tarif_soins" class="skel-layers-ignoreHref">Tarifs</a>
-						</article>
-					</div>
-					<div id="detail-massage-californien" class="12u 12u$(mobile) toggle-area detail">
-						<article class="item">
-
-							<body>
-								<div>
-									<span class="detail-titre">Huile de modelage</span>
-									<p>Cette huile connue pour sa texture douce et onctueuse se prête à des mouvememnts doux et relaxants. Le massage californien est une approche globale qui vise autant la détente que l'éveil d'une conscience psychocorporelle. Ce massage utilise de
-										longs mouvements lents et fluides qui permettent une profonde relaxation physique et psychique.</p>
-									<br>
-									<p>Partant d'effleurages doux, enveloppants et relaxants, les manoeuvres s'enchaînent et s'intensifient pour soulager les tensions plus profondes. Cela peut faire surgir et libérer des émotions cachées, inscrites dans la mémoire corporelle. Plus
-										la personne massée s'abandonne à l'expérience, plus elle s'ouvre à ce que le massage californien qualifie de toucher du coeur.</p>
-								</div>
-
-								<span class="link" onclick="toggleElement('#detail-soins-jambes-legeres'); goTo('#detail-soins-jambes-legeres');">Fermer</span>
-							</body>
-						</article>
-					</div>
-				</div>
-
-				<hr>
-
-				<!-- L'épilation -->
-				<div class="row">
-					<div class="6u 6u$(mobile)">
-						<article class="item">
-							<img src="dist/images_site/epilation.jpg" alt="L'épilation">
-						</article>
-					</div>
-					<div class="6u 6u$(mobile)">
-						<article class="item">
-							<h3>L'épilation</h3>
-							<a class="scrolly" href="#tarif_epilations" class="skel-layers-ignoreHref">Tarifs</a>
-						</article>
-					</div>
-				</div>
-
-				<hr>
-
-				<!-- L'onglerie -->
-				<div class="row">
-					<div class="6u 6u$(mobile)">
-						<article class="item">
-							<img src="dist/images_site/onglerie.jpg" alt="L'onglerie">
-						</article>
-					</div>
-					<div class="6u 6u$(mobile)">
-						<article class="item">
-							<h3>L'onglerie</h3>
-							<span class="link" onclick="toggleElement('#detail-onglerie');">En savoir plus <i class="fa fa-sort-desc" aria-hidden="true"></i></span>
-							<span>&nbsp;|&nbsp;</span>
-							<a class="scrolly" href="#tarif_onglerie" class="skel-layers-ignoreHref">Tarifs</a>
-						</article>
-					</div>
-					<div id="detail-onglerie" class="12u 12u$(mobile) toggle-area detail">
-						<article class="item">
-
-							<body>
-								<table class="tableau-detail">
-									<tbody>
-										<tr>
-											<td colspan="2">
-												<span class="detail-titre">L'onglerie</span>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<img src="dist/images_site/onglerie-1.jpg" alt="Onglerie 1" />
-											</td>
-											<td>
-												<img src="dist/images_site/onglerie-2.jpg" alt="Onglerie 2" />
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<img src="dist/images_site/onglerie-3.jpg" alt="Onglerie 3" />
-											</td>
-											<td>
-												<img src="dist/images_site/onglerie-4.jpg" alt="Onglerie 4" />
-											</td>
-										</tr>
-									</tbody>
-								</table>
-
-							</body>
-						</article>
-					</div>
-				</div>
-
-
-
 			</div>
 		</section>
 
@@ -771,6 +600,28 @@
 	<!--[if lte IE 8]><script src="dist/js/ie/respond.min.js"></script><![endif]-->
 	<script src="dist/js/main.js"></script>
 	<script src="dist/js/scripts.js"></script>
+	<script src="dist/js/pgwslideshow.min.js"></script>
+
+	<script type="text/javascript">
+		$(function() {
+			/*$('.carrousel').pgwSlideshow({
+				'accessibility': true,
+				'lazyLoad': 'ondemand',
+				'autoplay': false,
+				'slidesToShow': 2,
+				'centerMode': true,
+				'infinite': true,
+				'slidesToShow': 3,
+				'slidesToScroll': 3,
+				'adaptiveHeight': false,
+				'arrows': true,
+				'prevArrow': '<button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button" style="display: block;">Préc.</button>',
+				'nextArrow': '<button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button" style="display: block;">Suiv.</button>'
+			});*/
+
+			//$('.carrousel').pgwSlideshow({'transitionEffect': 'fading'});
+		});
+	</script>
 
 </body>
 

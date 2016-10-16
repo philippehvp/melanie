@@ -96,3 +96,24 @@ table {
 .tableau-detail img {
     width: 120px;
 }
+
+.carrousel img {
+    height: 120px;
+}
+
+.menu-prestations {
+    display: none;
+}
+
+.menu-prestations a {
+    font-size: 0.7em;
+    padding: 0;
+}
+
+.menu-prestations ul {
+    margin-bottom: 0;
+}
+
+.menu-prestations a {
+    padding-right: 2.5em !important;
+}
