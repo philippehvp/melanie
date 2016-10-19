@@ -2,10 +2,6 @@
     display: none;
 }
 
-.link {
-    cursor: pointer;
-}
-
 @font-face {
     font-family: 'Andantino';
     src: url('../fonts/911Fonts.com_Andantinoscript__-_911fonts.com-fonts-xGuo.ttf?#iefix') format("truetype");
@@ -76,18 +72,7 @@ table {
     margin-bottom: 0;
 }
 
-.detail-categorie, .detail-titre {
-    display: block;
-}
-
-.detail-categorie {
-    font-size: 1.1em;
-    font-weight: bold;
-    color: #000000;
-    margin: 1em 0;
-}
-
-.detail-titre {
+h4 {
     margin-top: 1em;
     color: #e27689;
     text-decoration: underline;
