@@ -1,9 +1,12 @@
 function toggleElement(el) {
     $(el).slideToggle();
-    console.log(el);
-
 }
 
 function goTo(anchor) {
     location.hash = anchor;
+}
+
+function displayArticle(id, cls) {
+    $(('.' + cls)).fadeOut(200);
+    $('#' + id).fadeIn(1200);
 }

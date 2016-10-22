@@ -13,10 +13,68 @@
     width: 200px;
 }
 
+article img {
+    max-height: 200px;
+}
+
+.soin-visage, .soin-corps {
+    display: none;
+}
+
+.lien-soin {
+    margin-bottom: 0;
+}
+
+.lien-soin li:first-child {
+    border-left: 0;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.lien-soin li {
+    line-height: 1em;
+    display: inline-block;
+    border-left: 1px solid rgba(128, 128, 128, 0.35);
+    padding-left: 0.3em;
+    margin-left: 0.3em;
+}
+
+.lien-soin li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.lien-soin-selectionne {
+    text-decoration: underline;
+}
+
+.carrousel img {
+    height: 120px;
+}
+
+.menu-prestations {
+    display: none;
+}
+
+.menu-prestations a {
+    font-size: 0.7em;
+    padding: 0;
+}
+
+.menu-prestations ul {
+    margin-bottom: 0;
+}
+
+.menu-prestations a {
+    padding-right: 2.5em !important;
+}
+
+
 /* Ecrasement des éléments du framework */
 
 #main>section {
     background-image: none;
+    padding-top: 1em;
 }
 
 #main>section.one {
@@ -54,10 +112,6 @@
     box-shadow: none;
 }
 
-table {
-    margin-bottom: 0;
-}
-
 .table-tarif td:first-child {
     text-align: left;
     padding-left: 1em;
@@ -76,29 +130,4 @@ h4 {
     margin-top: 1em;
     color: #e27689;
     text-decoration: underline;
-}
-
-.tableau-detail img {
-    width: 120px;
-}
-
-.carrousel img {
-    height: 120px;
-}
-
-.menu-prestations {
-    display: none;
-}
-
-.menu-prestations a {
-    font-size: 0.7em;
-    padding: 0;
-}
-
-.menu-prestations ul {
-    margin-bottom: 0;
-}
-
-.menu-prestations a {
-    padding-right: 2.5em !important;
 }
