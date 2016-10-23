@@ -1703,7 +1703,7 @@
 
 		.image img {
 			display: block;
-			width: 100%;
+			/*width: 100%;*/
 		}
 
 		.image.avatar48 {
@@ -2536,7 +2536,7 @@
 				}
 
 	}
-	
+
 blanc{
   color: white;
 }

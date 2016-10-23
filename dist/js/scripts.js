@@ -8,5 +8,5 @@ function goTo(anchor) {
 
 function displayArticle(id, cls) {
     $(('.' + cls)).fadeOut(200);
-    $('#' + id).fadeIn(1200);
+    $('#' + id).fadeIn(200);
 }

@@ -9,12 +9,9 @@
     font-style: normal;
 }
 
-.prestation img {
-    width: 200px;
-}
-
 article img {
     max-height: 200px;
+    width: initial;
 }
 
 .soin-visage, .soin-corps {
@@ -46,6 +43,10 @@ article img {
 
 .lien-soin-selectionne {
     text-decoration: underline;
+}
+
+a.lien-image {
+    border-bottom: 0;
 }
 
 .carrousel img {
@@ -130,4 +131,9 @@ h4 {
     margin-top: 1em;
     color: #e27689;
     text-decoration: underline;
+}
+
+/* Ecrasement de la lightbox */
+#cboxCurrent {
+    bottom: -8px;
 }

@@ -6,8 +6,8 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!--[if lte IE 8]><script src="dist/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="dist/css/colorbox.css" />
 	<link rel="stylesheet" href="dist/css/main.css" />
-	<!--link rel="stylesheet" href="dist/css/pgwslideshow.min.css" /-->
 	<link rel="stylesheet" href="dist/css/styles.css" />
 	<!--[if lte IE 8]><link rel="stylesheet" href="dist/css/ie8.css" /><![endif]-->
 	<!--[if lte IE 9]><link rel="stylesheet" href="dist/css/ie9.css" /><![endif]-->
@@ -118,12 +118,12 @@
 				<div class="row">
 					<div class="12u 12u$(mobile)">
 						<article>
-							<img src="dist/images_site/maquillage-jour.jpg" alt="Maquillage de jour" />
-							<img src="dist/images_site/maquillage-jour-2.jpg" alt="Maquillage de jour" />
-							<img src="dist/images_site/maquillage-soiree.jpg" alt="Maquillage de soirée" />
-							<img src="dist/images_site/maquillage-soiree-2.jpg" alt="Maquillage de soirée" />
-							<img src="dist/images_site/maquillage-mariee.jpg" alt="Maquillage de mariée" />
-							<img src="dist/images_site/maquillage-mariee-2.jpg" alt="Maquillage de mariée" />
+							<a href="dist/images_site/maquillage-jour.jpg" class="lien-image image-maquillage"><img src="dist/images_site/maquillage-jour.jpg" alt="Maquillage de jour" /></a>
+							<a href="dist/images_site/maquillage-jour-2.jpg" class="lien-image image-maquillage"><img src="dist/images_site/maquillage-jour-2.jpg" alt="Maquillage de jour" /></a>
+							<a href="dist/images_site/maquillage-soiree.jpg" class="lien-image image-maquillage"><img src="dist/images_site/maquillage-soiree.jpg" alt="Maquillage de soirée" /></a>
+							<a href="dist/images_site/maquillage-soiree-2.jpg" class="lien-image image-maquillage"><img src="dist/images_site/maquillage-soiree-2.jpg" alt="Maquillage de soirée" /></a>
+							<a href="dist/images_site/maquillage-mariee.jpg" class="lien-image image-maquillage"><img src="dist/images_site/maquillage-mariee.jpg" alt="Maquillage de mariée" /></a>
+							<a href="dist/images_site/maquillage-mariee-2.jpg" class="lien-image image-maquillage"><img src="dist/images_site/maquillage-mariee-2.jpg" alt="Maquillage de mariée" /></a>
 							<br>
 							<p>Maquillage de jour, de soirée ou de mariée, etc. Texte à compléter pour la mise en valeur.</p>
 						</article>
@@ -224,8 +224,8 @@
 						<!-- Soins du dos -->
 						<article class="soin-corps" id="soin-dos">
 							<h3>Les soins du dos</h3>
-							<img src="dist/images_site/soin-dos.jpg" alt="Les soins du dos">
-							<img src="dist/images_site/soin-du-dos.jpg" alt="Les soins du dos">
+							<a href="dist/images_site/soin-dos.jpg" class="lien-image image-soin-dos"><img src="dist/images_site/soin-dos.jpg" alt="Les soins du dos"></a>
+							<a href="dist/images_site/soin-du-dos.jpg" class="lien-image image-soin-dos"><img src="dist/images_site/soin-du-dos.jpg" alt="Les soins du dos"></a>
 							<br>
 
 							<h4>Gommage au Sucre et au Concombre</h4>
@@ -570,29 +570,13 @@
 	<script src="dist/js/skel.min.js"></script>
 	<script src="dist/js/util.js"></script>
 	<!--[if lte IE 8]><script src="dist/js/ie/respond.min.js"></script><![endif]-->
+	<script src="dist/js/jquery.colorbox-min.js"></script>
 	<script src="dist/js/main.js"></script>
 	<script src="dist/js/scripts.js"></script>
 	<!--script src="dist/js/pgwslideshow.min.js"></script-->
 
 	<script type="text/javascript">
 		$(function() {
-			/*$('.carrousel').pgwSlideshow({
-				'accessibility': true,
-				'lazyLoad': 'ondemand',
-				'autoplay': false,
-				'slidesToShow': 2,
-				'centerMode': true,
-				'infinite': true,
-				'slidesToShow': 3,
-				'slidesToScroll': 3,
-				'adaptiveHeight': false,
-				'arrows': true,
-				'prevArrow': '<button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button" style="display: block;">Préc.</button>',
-				'nextArrow': '<button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button" style="display: block;">Suiv.</button>'
-			});*/
-
-			//$('.carrousel').pgwSlideshow({'transitionEffect': 'fading'});
-
 			// Affichage du premier article de chaque catégorie de soin
 			$('.soin-visage').first().fadeIn(100);
 			$('.soin-corps').first().fadeIn(100);
@@ -602,13 +586,26 @@
 
 			// Lorsque l'utilisateur sélectionne une catéforie de soin, on le met en surbrillance
 			$('.lien-soin li').click(function() {
-				console.log(1);
 				// On enlève le style surbrillance à tous les liens de la catégorie de soin concernée
 				$(this).parent().find('li').removeClass('lien-soin-selectionne');
 
 				// On ajoute la classe surbrillance à l'élément cliqué
 				$(this).addClass('lien-soin-selectionne');
+			});
 
+			// Lightbox
+			$('.image-maquillage').colorbox({rel: 'maquillage'});
+			$('.image-soin-dos').colorbox({rel: 'soin-dos'});
+
+			jQuery.extend(jQuery.colorbox.settings, {
+				current: "{current} / {total}",
+				previous: "Pr&eacute;c.",
+				next: "Suiv.",
+				close: "Fermer",
+				xhrError: "Impossible de charger ce contenu.",
+				imgError: "Impossible de charger cette image.",
+				slideshowStart: "D&eacute;marrer la pr&eacute;sentation",
+				slideshowStop: "Arr&ecirc;ter la pr&eacute;sentation"
 			});
 
 		});
