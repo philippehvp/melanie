@@ -41,8 +41,9 @@
 
 							-->
 				<ul>
-					<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Accueil</span></a></li>
-					<li onclick="toggleElement('#menu-prestations');"><a href="#" id="prestation-link" class="skel-layers-ignoreHref"><span class="icon fa-map">Les prestations</span></a></li>
+					<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home" aria-hidden="true">Accueil</span></a></li>
+					<li><a href="#actu" id="actu-link" class="skel-layers-ignoreHref"><span class="icon fa-calendar" aria-hidden="true">Actualités</span></a></li>
+					<li onclick="toggleElement('#menu-prestations');"><a href="#" id="prestation-link" class="skel-layers-ignoreHref" aria-hidden="true"><span class="icon fa-map">Les prestations</span></a></li>
 					<div id="menu-prestations" class="menu-prestations">
 						<ul>
 							<li><a href="#maquillage" class="skel-layers-ignoreHref">Le maquillage</a></li>
@@ -52,9 +53,9 @@
 							<li><a href="#onglerie" class="skel-layers-ignoreHref">L'onglerie</a></li>
 						</ul>
 					</div>
-					<li><a href="#tarif" id="tarif-link" class="skel-layers-ignoreHref"><span class="icon fa-eur">Les tarifs</span></a></li>
-					<li><a href="#apropos" id="apropos-link" class="skel-layers-ignoreHref"><span class="icon fa-user">A propos de moi</span></a></li>
-					<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Me contacter</span></a></li>
+					<li><a href="#tarif" id="tarif-link" class="skel-layers-ignoreHref"><span class="icon fa-eur" aria-hidden="true">Les tarifs</span></a></li>
+					<li><a href="#apropos" id="apropos-link" class="skel-layers-ignoreHref"><span class="icon fa-user" aria-hidden="true">A propos de moi</span></a></li>
+					<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope" aria-hidden="true">Me contacter</span></a></li>
 				</ul>
 			</nav>
 
@@ -96,25 +97,20 @@
 		</div>
 		</section>
 
-		<!-- Prestations dans un carrousel -->
-		<!--div class="row">
-			<div class="6u 12u$(mobile)">
-				<ul class="carrousel">
-					<li><a class="scrolly" href="#detail-maquillage"></a><img src="dist/images_site/07349cf661077344fdc4996a16c84881.jpg" alt="Maquillage" data-description="Maquillage de jour, de soirée ou de mariée"></a></li>
-					<li><img src="dist/images_site/visage01.jpg" alt="Les soins du visage" data-description="Soin hydratant, régénérant ou purifiant"></li>
-					<li><img src="dist/images_site/soin-dos.jpg" alt="Les soins du dos"></li>
-					<li><img src="dist/images_site/14081319_10210461127990974_1326523830_n.jpg" alt="Les soins du buste"></li>
-					<li><img src="dist/images_site/14080915_10210461128030975_115109867_n.jpg" alt="Les soins amincissants"></li>
-					<li><img src="dist/images_site/14112148_10210461128070976_107907875_n.jpg" alt="Les soins jambes légères"></li>
-					<li><img src="dist/images_site/14054725_10210461127750968_1685143542_n.jpg" alt="Le massage californien"></li>
-					<li><img src="dist/images_site/epilation.jpg" alt="L'épilation"></li>
-					<li><img src="dist/images_site/onglerie.jpg" alt="L'onglerie"></li>
-				</ul>
+		<section id="actu" class="two">
+			<h2>Actualités</h2>
+			<div class="container">
+				<div class="row">
+					<div class="12u 12u$(mobile)">
+						<!-- Un style inline est appliqué à l'image, désolé....' -->
+						<a href="dist/images_site/14632924_10210575689525307_2839045618750893226_n.jpg" class="lien-image image-actu"><img src="dist/images_site/14632924_10210575689525307_2839045618750893226_n.jpg" alt="Beauty Chic" style="width:25%" /></a>
+					</div>
+				</div>
 			</div>
-		</div-->
+		</section>
 
 		<!-- Maquillage -->
-		<section id="maquillage" class="two">
+		<section id="maquillage" class="three">
 			<h2>Le maquillage</h2>
 			<div class="container">
 				<div class="row">
@@ -127,14 +123,15 @@
 							<a href="dist/images_site/maquillage-mariee.jpg" class="lien-image image-maquillage"><img src="dist/images_site/maquillage-mariee.jpg" alt="Maquillage de mariée" /></a>
 							<a href="dist/images_site/maquillage-mariee-2.jpg" class="lien-image image-maquillage"><img src="dist/images_site/maquillage-mariee-2.jpg" alt="Maquillage de mariée" /></a>
 							<br>
-							<p>Maquillage de jour, de soirée ou de mariée, etc. Texte à compléter pour la mise en valeur.</p>
+							<p>Je réalise des maquillages de jour, de soirée et de mariage.<br>Ainsi, à tout moment, soyez BELLE et GRACIEUSE pour dévoiler votre BEAUTE !</p>
 						</article>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section id="soins-visage" class="three">
+		<!-- Soins du visage -->
+		<section id="soins-visage" class="four">
 			<h2>Les soins du visage</h2>
 			<div class="container">
 				<div class="row">
@@ -148,6 +145,8 @@
 
 						<article class="soin-visage" id="soin-hydratant">
 							<h3>Soin Hydratant</h3>
+							
+							<a href="dist/images_site/56a7c96350cd5_visage-gauche-desktop.jpeg" class="lien-image image-soin-hydratant"><img src="dist/images_site/56a7c96350cd5_visage-gauche-desktop.jpeg" alt="Soin hydratant" /></a>
 
 							<h4>Exfoliant au jus d’Aloé Véra Bio et à la poudre de Bambou</h4>
 							<p>Exfoliant naturel pour le visage. La haute nutrition apportée par sa concentration de jus d’Aloé Véra bio, adoucit l’exfoliation qui purifie naturellement les cellules mortes de l’épiderme, grâce à l’action de la poudre de bambou. Nettoyage doux
@@ -163,6 +162,10 @@
 						<article class="soin-visage" id="soin-purifiant">
 							<h3>Soin purifiant</h3>
 
+							<a href="dist/images_site/482350860.42.jpg" class="lien-image image-soin-purifiant"><img src="dist/images_site/482350860.42.jpg" alt="Soin purifiant" /></a>
+
+							
+
 							<h4>Gommage à grain</h4>
 							<p>Douce et onctueuse, cette crème de gommage élimine les impuretés et cellules mortes tout en stimulant le renouvellement cellulaire. Gommage mécanique à grains fins.</p>
 
@@ -175,6 +178,8 @@
 						<article class="soin-visage" id="soin-nourrissant">
 							<h3>Soin nourrissant</h3>
 
+							<a href="dist/images_site/255146_189854137730040_147333451982109_471519_6068761_n.jpg" class="lien-image image-soin-nourrissant"><img src="dist/images_site/255146_189854137730040_147333451982109_471519_6068761_n.jpg" alt="Soin nourrissant" /></a>
+
 							<h4>Gommage chimique</h4>
 							<p>Affine le grain de peau, lisse, unifie le teint et apporte de l'éclat grâce à l'action enzymatique de la Keratoline et des acides de fleurs permettant d'eliminer cellules mortes et impuretés. Idéal pour les peux sensibles ou grasses, ne nécessite
 								pas de frottement</p>
@@ -183,11 +188,13 @@
 							<p>Crème enrichie en huile de tournesol aux vertus assouplissantes et unifiantes pour la peau. Avec sa composition en Vitamine E et en jus d’Aloé Véra bio elle offre un soin anti-âge préventif par ses actions anti-oxydantes et hautement nutritives.</p>
 
 							<h4>Masque crème haute nutrition</h4>
-							<p>Pour embellir votre peau grâce à l'association d'actifs nourissants, hydratants, régénérants et anti-oxydants: Beurre de karité, Beurre de cacao, Huile de noisette et Complexe de vitamine A, E et B5 Pour une peau plus lisse, souple et confortable.
+							<p>Pour embellir votre peau grâce à l'association d'actifs nourrissants, hydratants, régénérants et anti-oxydants: Beurre de karité, Beurre de cacao, Huile de noisette et Complexe de vitamine A, E et B5 Pour une peau plus lisse, souple et confortable.
 								Finis les tiraillements</p>
 						</article>
 						<article class="soin-visage" id="soin-anti-age">
 							<h3>Soin régénérant anti-âge</h3>
+
+							<a href="dist/images_site/teaserbox_50166842.jpg" class="lien-image image-soin-regenerant"><img src="dist/images_site/teaserbox_50166842.jpg" alt="Soin régénérant" /></a>
 
 							<h4>Gommage chimique</h4>
 							<p>Affine le grain de peau, lisse, unifie le teint et apporte de l'éclat grâce à l'action enzymatique de la Keratoline et des acides de fleurs permettant d'eliminer cellules mortes et impuretés. Idéal pour les peux sensibles ou grasses, ne nécessite
@@ -210,6 +217,7 @@
 			</div>
 		</section>
 
+		<!-- Soins du corps -->
 		<section id="soins-corps" class="two">
 			<h2>Les soins du corps</h2>
 			<div class="container">
@@ -309,21 +317,23 @@
 			</div>
 		</section>
 
+		<!-- Epilation -->
 		<section id="epilation" class="three">
 			<h2>L'épilation</h1>
 			<div class="container">
 				<div class="row">
 					<div class="12u 12u$(mobile)">
 						<article>
-
 							<img src="dist/images_site/epilation.jpg" alt="L'épilation">
+							<p>Epilation à la cire chaude sans bande pour les zones sensibles et avec bandes pour le reste. Vos poils repoussent plus lentement, seront moins nombreux et plus doux.</p>
 						</article>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section id="onglerie" class="two">
+		<!-- Onglerie -->
+		<section id="onglerie" class="four">
 			<h2>L'onglerie</h2>
 			<div class="container">
 				<div class="row">
@@ -334,6 +344,11 @@
 							<a href="dist/images_site/onglerie-2.jpg" class="lien-image image-onglerie"><img src="dist/images_site/onglerie-2.jpg" alt="L'onglerie"></a>
 							<a href="dist/images_site/onglerie-3.jpg" class="lien-image image-onglerie"><img src="dist/images_site/onglerie-3.jpg" alt="L'onglerie"></a>
 							<a href="dist/images_site/onglerie-4.jpg" class="lien-image image-onglerie"><img src="dist/images_site/onglerie-4.jpg" alt="L'onglerie"></a>
+							<br>
+							<p>Vos mains et vos pieds méritent, tout autant que votre visage, d'être chouchoutés et entretenus ! Finis les tiraillements de la peau, les ongles cassés, les cornes sous les pieds !!</p>
+							<br>
+							<p>Je vous propose des soins adaptés pour soigner et embellir vos mains et vos pieds. Pour une manucure ou une pédicure, vous aurez soit un gommage, un modelage et une pose de masque nourrissant, soit un soin des ongles avec un modelage.</p>
+
 						</article>
 
 					</div>
@@ -342,7 +357,7 @@
 		</section>
 
 		<!-- Tarifs -->
-		<section id="tarif" class="three">
+		<section id="tarif" class="two">
 			<div class="container">
 				<header>
 					<h2>Tarifs</h2>
@@ -374,7 +389,7 @@
 							</header>
 						</article>
 						<article class="item">
-							<header id="tarif_soins_visage">
+							<header id="tarif_soin_visage">
 								<h3>Les soins visage</h3>
 								<tbody>
 									<table class="table table-tarif">
@@ -398,7 +413,7 @@
 						</article>
 
 						<article class="item">
-							<header id="tarif_soins">
+							<header id="tarif_soin_corps">
 								<h3>Les soins du corps</h3>
 								<tbody>
 									<table class="table table-tarif">
@@ -432,7 +447,7 @@
 
 					<div class="6u 12u$(mobile)">
 						<article class="item">
-							<header id="tarif_epilations">
+							<header id="tarif_epilation">
 								<h3>L'épilation (-10% à partir de 3)</h3>
 								<tbody>
 									<table class="table table-tarif">
@@ -482,6 +497,10 @@
 												<td>15 €</td>
 											</tr>
 											<tr>
+												<td>Dos</td>
+												<td>15 €</td>
+											</tr>
+											<tr>
 												<td>Demi-jambes</td>
 												<td>13 €</td>
 											</tr>
@@ -524,7 +543,7 @@
 				<div class="row">
 					<div class="12u 12u$(mobile)">
 						<article class="item">
-							<header id="tarif_onglerie">
+							<header id="tarif_mariee">
 								<h3>Forfait mariée</h3>
 								<tbody>
 									<table class="table table-tarif">
@@ -539,21 +558,47 @@
 							</header>
 						</article>
 					</div>
+				</div>
 
+				<div class="row">
+					<div class="12u 12u$(mobile)">
+						<article class="item">
+							<header id="tarif_mariee">
+								<h3>Chèque cadeau</h3>
+								<tbody>
+									<a href="dist/images_site/cheque-cadeau-recto.jpg" class="lien-image image-cheque-cadeau"><img src="dist/images_site/cheque-cadeau-recto.jpg" alt="Chèque cadeau" /></a>
+									<a href="dist/images_site/cheque-cadeau-verso.jpg" class="lien-image image-cheque-cadeau"><img src="dist/images_site/cheque-cadeau-verso.jpg" alt="Chèque cadeau" /></a>
+								</tbody>
+							</header>
+						</article>
+					</div>
 				</div>
 			</div>
 		</section>
 
-
 		<!-- A propos de moi -->
-		<section id="apropos">
+		<section id="apropos" class="three">
 			<div class="container">
 
 				<header>
 					<h2>A propos de moi</h2>
 				</header>
 
-				<p>Texte à compléter</p>
+				<p>Je me présente, je m’appelle Mélanie et je vous propose des soins esthétiques à domicile à Istres et ses alentours.<br>Je me déplace avec ma table de massage ainsi que tout le matériel nécessaire.
+				<br>Le plus important à mes yeux, c’est vous, votre satisfaction, votre bien-être et que vous passiez un agréable moment !</p>
+				<p>Je vous propose, en plus de mes prestations, des * GIRL PARTY * avec 50% DE REMISE pour l'hôtesse.</p>
+				<img src="dist/images_site/14022145_292251467819505_8449928927330111540_n.jpg" alt="Girly party" />
+				<p>Aimeriez-vous être chouchoutées (massage, manucure, soins...) dans une ambiance détente et rigolade au cours d'une soirée à la maison entre amies, lors d'un enterrement de vie de jeune fille original ou tout simplement avant de sortir en soirée ?<br>
+				J'ai créé pour vous la Girly Party !<br>
+				Cette prestation commence à partir de 3 personnes, pour un tarif minimum de 30 € par personne seulement selon les soins souhaités.<br>
+				Au-delà de 150 € de prestation commune, bénéficiez toutes de 10% DE REMISE sur vos soins.</p>
+				<p>Je travaille en partenariat avec d’autres entreprises avec qui je crée des événements BEAUTE, BIEN-ETRE et SPORT.</p>
+				<a href="https://www.keepcool.fr/" target="_blank"><img src="dist/images_site/logo-commercant-keepcool_0.png" alt="KeepCool Istres" class="partenaires" /></a>
+				<a href="https://www.facebook.com/authentiquerelooking/" target="_blank"><img src="dist/images_site/13423772_507597209440565_2434265978055176978_n.jpg" alt="Authentique Coach en image et Relooking" class="partenaires" /></a>
+				<a href="https://www.facebook.com/sylvain.gammacoaching" target="_blank"><img src="dist/images_site/14322324_185051635259160_1791539637268285372_n.jpg" alt="Sylvain Gammacoaching Pro" class="partenaires" /></a>
+				
+				
+				
 
 			</div>
 		</section>
@@ -617,20 +662,16 @@
 			});
 
 			// Lightbox
+			$('.image-actu').colorbox({rel: 'actu'});
 			$('.image-maquillage').colorbox({rel: 'maquillage'});
 			$('.image-soin-dos').colorbox({rel: 'soin-dos'});
 			$('.image-onglerie').colorbox({rel: 'onglerie'});
-
-			/*jQuery.extend(jQuery.colorbox.settings, {
-				current: "{current} / {total}",
-				previous: "Pr&eacute;c.",
-				next: "Suiv.",
-				close: "Fermer",
-				xhrError: "Impossible de charger ce contenu.",
-				imgError: "Impossible de charger cette image.",
-				slideshowStart: "D&eacute;marrer la pr&eacute;sentation",
-				slideshowStop: "Arr&ecirc;ter la pr&eacute;sentation"
-			});*/
+			$('.image-soin-hydratant').colorbox({rel: 'soin-hydratant'});
+			$('.image-soin-purifiant').colorbox({rel: 'soin-purifiant'});
+			$('.image-soin-nourrissant').colorbox({rel: 'soin-nourrissant'});
+			$('.image-soin-regenerant').colorbox({rel: 'soin-regenerant'});
+			$('.image-soin-hydratant').colorbox({rel: 'soin-hydratant'});
+			$('.image-cheque-cadeau').colorbox({rel: 'cheque-cadeau'});
 
 			jQuery.extend(jQuery.colorbox.settings, {
 				current: "",
