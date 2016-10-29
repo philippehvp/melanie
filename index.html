@@ -64,7 +64,9 @@
 
 			<!-- Réseaux sociaux et contact -->
 			<ul class="icons">
-				<li><a href="https://www.facebook.com/mlmasseuse.estheticienne13.fr/?fref=ts" target="_blank"><span class="fa fa-facebook"></span></li>
+				<li>
+					<a href="https://www.facebook.com/mlmasseuse.estheticienne13.fr/?fref=ts" target="_blank"><span class="fa fa-facebook"></span></a>
+				</li>
 			</ul>
 
 		</div>
@@ -263,12 +265,30 @@
 						<article class="soin-corps" id="soin-amincissant">
 							<h3>Les soins amincissants</h3>
 							<img src="dist/images_site/14080915_10210461128030975_115109867_n.jpg" alt="Les soins amincissants">
+							<br>
+							<h4>Gommage au Sucre et au Concombre</h4>
+							<p>Active la circulation sanguine. Les cristaux de sucre offrent une exfoliation naturelle en réduisant les risques d'irritation tandis que le concombre adoucit l'épiderme.</p>
+							<h4>Huile de modelage amincissante</h4>
+							<p>A base d'algues et d'huiles essentielles de romarin et de citron pour un massage amincissant. Votre silhouette sera comme affinée grâce aux techniques de ce modelage et aux bienfaits de l'huile amincissante.</p>
+							<h4>Enveloppement chaud au thé vert</h4>
+							<p>Ce masque chauffant combine deux actions : peeling et massage. Il permet de lisser efficacement les capitons, d'affiner et de raffermir la silhouette grâce à "l'effet sauna" et aux agents lissants. Il est formulé à partir de jeunes feuilles de thé vert qui sont reconnues pour leurs propriétés amincissantes et détoxifiantes.</p>
+							<h4>Lait hydratant extrême</h4>
+							<p>Idéal pour tous types de peaux même les plus sensibles, ce lait apporte à votre peau une hydratation extrême. Il associe un agent hydratant puissant, l'Aquaxyl, à de l'huile de noix ed macadamia et du beurre de karité pour envelopper votre corps d'une douceur extrême. La peau immédiatement hydratée retrouve confort et souplesse.</p>
 						</article>
 
 						<!-- Soins jambes légères -->
 						<article class="soin-corps" id="soin-jambes-legeres">
 							<h3>Les soins jambes légères</h3>
 							<img src="dist/images_site/14112148_10210461128070976_107907875_n.jpg" alt="Les soins jambes légères">
+							<br>
+							<h4>Gommage au Sucre et au Concombre</h4>
+							<p>Active la circulation sanguine. Les cristaux de sucre offrent une exfoliation naturelle en réduisant les risques d'irritation tandis que le concombre adoucit l'épiderme.</p>
+							<h4>Huile de modelage amincissante</h4>
+							<p>A base d'algues et d'huiles essentielles de romarin et de citron pour un massage amincissant. Votre silhouette sera comme affinée grâce aux techniques de ce modelage et aux bienfaits de l'huile amincissante.</p>
+							<h4>Enveloppement cryogénique</h4>
+							<p>La lotion fraîcheur assure un soulagement instantané sous l'action du menthol qui délasse et rafraîchit durablement. Ce produit se dilue dans l'eau et s'utilise conjointement avec l'application de bandes de crêpes imbibées de cette solution.</p>
+							<h4>Gel jambe rafraîchissant</h4>
+							<p>Tel un glaçon, ce gel non gras atténue instantanément la sensation de fatigue. Le menthol rafraîchissant dissipe immédiatement l'inconfort des jambes tandis que les huiles essentielles de sauge et de romarin procurent une agréable sensation de bien-être. Riche en minéraux et en oligo-éléments, les algues et l'eau de mer apportent des actifs dynamisant indispensables. Plus légères, les james retrouvent tout leur confort.</p>
 						</article>
 
 						<!-- Massage californien -->
@@ -310,7 +330,10 @@
 					<div class="12u 12u$(mobile)">
 						<article>
 
-							<img src="dist/images_site/onglerie.jpg" alt="L'onglerie">
+							<a href="dist/images_site/onglerie-1.jpg" class="lien-image image-onglerie"><img src="dist/images_site/onglerie-1.jpg" alt="L'onglerie"></a>
+							<a href="dist/images_site/onglerie-2.jpg" class="lien-image image-onglerie"><img src="dist/images_site/onglerie-2.jpg" alt="L'onglerie"></a>
+							<a href="dist/images_site/onglerie-3.jpg" class="lien-image image-onglerie"><img src="dist/images_site/onglerie-3.jpg" alt="L'onglerie"></a>
+							<a href="dist/images_site/onglerie-4.jpg" class="lien-image image-onglerie"><img src="dist/images_site/onglerie-4.jpg" alt="L'onglerie"></a>
 						</article>
 
 					</div>
@@ -596,11 +619,23 @@
 			// Lightbox
 			$('.image-maquillage').colorbox({rel: 'maquillage'});
 			$('.image-soin-dos').colorbox({rel: 'soin-dos'});
+			$('.image-onglerie').colorbox({rel: 'onglerie'});
 
-			jQuery.extend(jQuery.colorbox.settings, {
+			/*jQuery.extend(jQuery.colorbox.settings, {
 				current: "{current} / {total}",
 				previous: "Pr&eacute;c.",
 				next: "Suiv.",
+				close: "Fermer",
+				xhrError: "Impossible de charger ce contenu.",
+				imgError: "Impossible de charger cette image.",
+				slideshowStart: "D&eacute;marrer la pr&eacute;sentation",
+				slideshowStop: "Arr&ecirc;ter la pr&eacute;sentation"
+			});*/
+
+			jQuery.extend(jQuery.colorbox.settings, {
+				current: "",
+				previous: "",
+				next: "",
 				close: "Fermer",
 				xhrError: "Impossible de charger ce contenu.",
 				imgError: "Impossible de charger cette image.",
